@@ -1,4 +1,3 @@
-source 'https://rubygems.org'
-
-# Specify your gem's dependencies in by_star_mongoid.gemspec
+source 'http://ruby.taobao.org'
+gem 'mongoid', '~> 3.1'
 gemspec
