@@ -12,6 +12,13 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{allows you to find Mongoid objects given certain date objects}
   gem.homepage      = "https://github.com/simlegate/by_star_mongoid"
 
+  gem.add_dependency "mongoid", ["> 3.0"]
+
+  gem.add_development_dependency 'guard-rspec'
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'factory_girl'
+
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
