@@ -8,9 +8,9 @@ Gem::Specification.new do |gem|
   gem.version       = ByStarMongoid::VERSION
   gem.authors       = ["simlegate"]
   gem.email         = ["simlegate@163.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{allows you to find Mongoid objects given certain date objects}
+  gem.summary       = %q{allows you to find Mongoid objects given certain date objects}
+  gem.homepage      = "https://github.com/simlegate/by_star_mongoid"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
