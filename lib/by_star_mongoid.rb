@@ -7,6 +7,10 @@ module Mongoid
 
       included do
         include ByDay
+
+        class ParseError < StandardError
+
+        end
       end
 
       module ClassMethods
