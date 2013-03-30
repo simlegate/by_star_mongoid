@@ -1,12 +1,15 @@
 require "mongoid"
 require "by_star_mongoid/version"
 require "by_star_mongoid/by_day"
+require "by_star_mongoid/by_week"
+require "by_star_mongoid/by_direction"
 module Mongoid
   module ByStar
       extend ActiveSupport::Concern
 
       included do
         include ByDay
+        include ByDirection
 
         class ParseError < StandardError
 

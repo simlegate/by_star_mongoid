@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*-
 FactoryGirl.define do
+   sequence(:created_at, -5) {|n| n.days.ago }
   factory :user do
     username "simlegate"
-
-    factory :today do
-    end
-
-    factory :yesterday do
-      created_at Time.now.yesterday
-    end
-
-    factory :tomorrow do
-      created_at Time.now.tomorrow
-    end
+    created_at 
   end
 end

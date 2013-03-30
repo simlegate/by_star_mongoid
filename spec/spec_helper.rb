@@ -18,10 +18,6 @@ Mongoid.configure do |config|
   config.connect_to('by_star_mongoid_test')
 end
 
-DatabaseCleaner.strategy = :truncation
-DatabaseCleaner.orm = "mongoid"
-DatabaseCleaner.clean
-
 RSpec.configure do |config|
   config.mock_with :rspec
   config.include FactoryGirl::Syntax::Methods

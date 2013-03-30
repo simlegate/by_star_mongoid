@@ -1,15 +1,15 @@
 require "spec_helper.rb"
 describe "today" do
-  days = [:today,:yesterday,:tomorrow]
 
+  days = [:today,:yesterday,:tomorrow]
   before :each do
-    days.each{|u| create_list(u,@i = 2)}
+     @users = create_list(:user,10)
   end
 
   days.each do |time|
     context "#{time}" do
       it "I should get users created #{time}" do
-	User.send(time).count.should == @i
+	User.send(time).count.should == 1
       end
     end
   end
